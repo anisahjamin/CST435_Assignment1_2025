@@ -1,5 +1,5 @@
 # CST435_Assignment1_2025
-##INTRODUCTION
+#INTRODUCTION
 In modern cloud-based system, communication frameworks play a vital role in determining the overall performance, scalability and responsiveness of one application. As organizations expand from monolithic system, which the application is built as a single unified unit to microservices and multi-node architecture, efficient communication mechanisms are crucial to guarantee that distributed components can communicate consistently and quickly. Since different protocols have varying serialisation costs, network overheads, and communication latencies, the choice of communication framework has significant effects on system behaviour. 
 
 Remote Procedure Call (RPC) mechanisms and advanced protocols such as gRPC have emerged as foundational technologies for service-to-service communication in modern distributed systems. Traditional RPC implements a logical client-to-server communications system which are designed specifically to support the network applications, whereas gRPC leverages HTTP/2, binary serialization through Protocol Buffers (protobuf), and bidirectional streaming to deliver higher throughput and lower latency in microservices deployments. However, the actual performance advantages of these frameworks depend heavily on their execution environments.  
