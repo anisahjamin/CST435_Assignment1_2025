@@ -1,0 +1,56 @@
+syntax = "proto3";
+package textprocess;
+
+service TextService {
+  rpc ProcessFile (FileRequest) returns (PipelineResponse);
+
+  rpc WordFrequency (FileRequest) returns (WordFreqResponse);
+  rpc CompressFile (FileRequest) returns (FileResponse);
+  rpc DecompressFile (FileRequest) returns (FileResponse);
+  rpc DetectLanguage (FileRequest) returns (LangResponse);
+  rpc SentimentAnalysis (FileRequest) returns (SentimentResponse);
+  rpc TranslateText (TranslateRequest) returns (TranslationResponse);
+}
+
+message FileRequest {
+  string filename = 1;
+  bytes content = 2;
+}
+
+message WordFreqResponse {
+  map<string, int32> freq = 1;
+}
+
+message FileResponse {
+  string filename = 1;
+  bytes content = 2;
+}
+
+message LangResponse {
+  string language = 1;
+}
+
+message SentimentResponse {
+  string label = 1;
+  double score = 2;
+}
+
+message TranslationResponse {
+  string source_lang = 1;
+  string target_lang = 2;
+  string translated_text = 3;
+}
+
+message TranslateRequest {
+  string text = 1;
+  string target_lang = 2;
+}
+
+message PipelineResponse {
+  WordFreqResponse wordfreq = 1;
+  FileResponse compressed = 2;
+  LangResponse language = 3;
+  SentimentResponse sentiment = 4;
+  TranslationResponse translation = 5;
+  string timings = 6;
+}

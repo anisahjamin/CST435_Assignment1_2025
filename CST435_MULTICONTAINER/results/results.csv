@@ -1,0 +1,12 @@
+input.txt,yang:33;dan:25;dalam:21,id,positive,1933,6520,"wordfreq=0.004173s, compress=0.003926s, language=0.413643s, sentiment=0.005632s, encrypt=0.011016s",0.448581
+input.txt,日本は美しい国です:1;春には桜の花が咲き:1;秋には紅葉が美しく:1,ja,neutral,189,420,"wordfreq=0.003156s, compress=0.002706s, language=0.003189s, sentiment=0.002826s, encrypt=0.002914s",0.019222
+input.txt,とてもにぎやかです:1;春には桜の花が咲き:1;夏は祭りや花火大会があり:1,ja,neutral,189,420,"wordfreq=0.002434s, compress=0.002221s, language=0.003545s, sentiment=0.002937s, encrypt=0.002802s",0.017778
+input.txt,ちい:4;あ:4;ふ:3,ja,neutral,2418,8524,"wordfreq=0.002025s, compress=0.001839s, language=0.010480s, sentiment=0.002171s, encrypt=0.001852s",0.022220
+input.txt,あ:4;ちい:4;て:3,ja,neutral,2418,8524,"wordfreq=0.007149s, compress=0.006254s, language=0.459889s, sentiment=0.008439s, encrypt=0.010029s",0.498388
+input.txt,ちい:4;あ:4;ふ:3,ja,neutral,2418,8524,"wordfreq=0.007053s, compress=0.006035s, language=0.379986s, sentiment=0.005829s, encrypt=0.006866s",0.413017
+input.txt,あ:4;ちい:4;かな:3,ja,neutral,2418,8524,"wordfreq=0.003772s, compress=0.002804s, language=0.039934s, sentiment=0.005142s, encrypt=0.003842s",0.063248
+input.txt,ちい:4;あ:4;なが:3,ja,neutral,2418,8524,"wordfreq=0.003417s, compress=0.003551s, language=0.032364s, sentiment=0.003732s, encrypt=0.003040s",0.056507
+input.txt,あ:4;ちい:4;かみ:3,ja,neutral,2418,8524,"wordfreq=0.011414s, compress=0.008430s, language=0.577438s, sentiment=0.004774s, encrypt=0.006274s",0.617254
+input.txt,ちい:4;あ:4;かみ:3,ja,neutral,2418,8524,"wordfreq=0.008271s, compress=0.004970s, language=0.371418s, sentiment=0.005694s, encrypt=0.006737s",0.406021
+input.txt,あ:4;ちい:4;かみ:3,ja,neutral,2418,8524,"wordfreq=0.003800s, compress=0.003669s, language=0.041478s, sentiment=0.003777s, encrypt=0.003328s",0.066760
+input.txt,ちい:4;あ:4;こ:3,ja,neutral,2418,8524,"wordfreq=0.005790s, compress=0.004906s, language=0.706944s, sentiment=0.008442s, encrypt=0.016422s",0.756096

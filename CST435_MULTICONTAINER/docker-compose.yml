@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  controller-server:
+    build: .
+    container_name: controller-server
+    command: ["python", "controller_server.py"]
+    ports:
+      - "50050:50050"
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import socket; s=socket.socket(); s.connect((\"localhost\",50050))'"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  wordfreq-server:
+    build: .
+    container_name: wordfreq-server
+    command: ["python", "wordfreq_server.py"]
+
+  compress-server:
+    build: .
+    container_name: compress-server
+    command: ["python", "compress_server.py"]
+
+  language-server:
+    build: .
+    container_name: language-server
+    command: ["python", "language_server.py"]
+
+  sentiment-server:
+    build: .
+    container_name: sentiment-server
+    command: ["python", "sentiment_server.py"]
+
+  translation-server:
+    build: .
+    container_name: translation-server
+    command: ["python", "translation_server.py"]
+
+  client:
+    build: .
+    container_name: client
+    command: ["python", "client.py", "/app/input.txt"]
+    depends_on:
+      - controller-server
+      - wordfreq-server
+      - compress-server
+      - language-server
+      - sentiment-server
+      - translation-server
+    restart: on-failure
+    volumes:
+      - ./input.txt:/app/input.txt

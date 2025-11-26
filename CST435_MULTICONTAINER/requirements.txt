@@ -1,0 +1,6 @@
+grpcio
+grpcio-tools
+cryptography
+langdetect
+vaderSentiment
+deep-translator
